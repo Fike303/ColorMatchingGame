@@ -1,0 +1,112 @@
+body {
+    background-color: floralwhite;
+    margin: 0;
+}
+
+.square {
+    /* each square will take up 30% of the screen width with margin between*/
+    width: 30%;
+    margin: 1.66%;
+    
+    /* add some "content" as a placeholder so that the squares will render */
+    padding-bottom: 30%;
+    background: #232323;
+    
+    /* float left so that the squares won't just stack vertically */
+    float: left;
+    
+    /* rounded corners */
+    border-radius: 28%;
+    
+    /* fade color in when clicked */
+    transition: background .06s;
+    -webkit-transition: background .06s;
+    -moz-transition: background 0.6s;
+}
+
+#container{
+    /* this container surrounds the set of color squares and will provide
+    a containing boundary for sizing and positioning of the squares as a group */
+    max-width: 600px;
+    
+    /* we also want to center the group of squares on the screen
+    - we use margin "0" for top/bottom and "auto" for left/right
+    so that the size of the left and right sides will automatically match
+    and will result in the container itself being centered horizontally 
+    in the space */
+    margin: 20px auto;
+}
+
+h1 {
+    color: floralwhite;
+    text-align: center;
+    background: grey;
+    margin: 0;
+    font-family: "Avenir", "Montserrat", sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+    padding: 20px 0;
+}
+
+#title {
+    font-size: 110%;
+    text-transform: uppercase;
+}
+
+#colorDisplay {
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+#stripe {
+    background: lightgrey;
+    height: 30px;
+    text-align: center;
+}
+
+.selected {
+    color: floralwhite;
+    background: grey;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: grey;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.5s;
+    -webkit-transition: all .05s;
+    -moz-transition: all 0.5s;
+    outline: none;
+}
+
+button:hover {
+    color: floralwhite;
+    background: grey;
+    outline: none;
+}
+
+/* this is the span that contains messages to the player within the stripe area */
+#message {  
+    display: inline-block;
+    width: 20%;
+    font-family: "Avenir", "Montserrat", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: inherit;
+    color: orangered;
+}
+
+
+
+
+
+
+
+
+

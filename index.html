@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Color Matching Challenge</title>
+    <link rel="stylesheet" type="text/css" href="colorGame.css">
+</head>
+    
+<body>
+    
+    <!--the span in this h1 will be updated to display the "target" color code
+that the player is trying to match during the game -->
+    <h1><span id="title">The Great Color Matching Game</span>
+    <br>
+    <span id="sub">Click on the square that matches this color code:</span>
+    <br>
+    <span id="colorDisplay">RGB</span>
+    <br>
+    </h1>
+    
+    <div id="stripe">
+        <button id = "reset">Reset Colors</button>
+        <span id="message"></span>
+        <button id = "easyBtn">Easy</button>
+        <button id = "hardBtn" class = "selected">Difficult</button>
+    </div>
+    
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    
+    <script type="text/javascript" src="colorGame.js"></script>
+</body>
+</html>
